@@ -12,6 +12,9 @@
     		VK.init(function() 
     		{ 
      			console.log("OK VK");
+     			if(document.getElementById("btn")){
+     				alert("QQQQ");
+     			}
 
   			}, function(){ 
      			console.log("NO VK");
@@ -22,5 +25,6 @@
 	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
 	<canvas id="canvasGame" width="980" height="700" style="border:1px solid black;"></canvas>
 	<script type="text/javascript" src="js/coreGame.js"></script>
+	<p><input type="button" value="Приграсить друга" id="btn"></p>
 </body>
 </html>
