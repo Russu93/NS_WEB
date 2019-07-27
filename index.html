@@ -6,17 +6,20 @@
 	
 </head>
 <body>
-	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript">
-		VK.init(function(){
-			//code
-			console.log("VK АРБАЙТЕН!")
-			VK.callMethod("showInviteBox");
-		},
-		function(){
-			//failed
-			console.log("VK не АРБАЙТЕН!")
-		},'5.101');
-	</script>
+	<script>
+		window.onload = function() {
+    		 VK.init(function() { 
+     // API initialization succeeded 
+     // Your code here 
+     console.log("OK");
+  }, function() { 
+     // API initialization failed 
+     // Can reload page here
+     console.log("NO"); 
+}, '5.101'); 
+  		};
+  	</script>
+	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
 	<canvas id="canvasGame" width="1000" height="700"></canvas>
 	<script type="text/javascript" src="js/coreGame.js"></script>
 </body>
