@@ -9,13 +9,11 @@
 	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript">
 		VK.init(function(){
 			//code
-			VK.callMethod("showSettingsBox", 8214);
-			VK.api("wall.post", {"message": "Hello!", "v":"5.73"}, function (data) {
-				alert("Post ID:" + data.response.post_id);
-			});
+			VK.callMethod("showInviteBox");
 		},
 		function(){
 			//failed
+			alert("Ошибка!")
 		},'5.101');
 	</script>
 	<canvas id="canvasGame" width="1000" height="700"></canvas>
