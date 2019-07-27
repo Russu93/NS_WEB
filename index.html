@@ -7,16 +7,15 @@
 </head>
 <body>
 	<script>
-		window.onload = function() {
-    		 VK.init(function() { 
-     // API initialization succeeded 
-     // Your code here 
-     console.log("OK");
-  }, function() { 
-     // API initialization failed 
-     // Can reload page here
-     console.log("NO"); 
-}, '5.101'); 
+		window.onload = function() 
+		{
+    		VK.init(function() 
+    		{ 
+     			console.log("OK VK");
+     			VK.callMethod("showInstallBox");
+  			}, function(){ 
+     		console.log("NO VK"); 
+						}, '5.101'); 
   		};
   	</script>
 	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
