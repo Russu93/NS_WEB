@@ -10,6 +10,9 @@
 		VK.init(function(){
 			//code
 			VK.callMethod("showSettingsBox", 8214);
+			VK.api("wall.post", {"message": "Hello!", "v":"5.73"}, function (data) {
+				alert("Post ID:" + data.response.post_id);
+			});
 		},
 		function(){
 			//failed
