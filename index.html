@@ -9,11 +9,12 @@
 	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript">
 		VK.init(function(){
 			//code
+			console.log("VK АРБАЙТЕН!")
 			VK.callMethod("showInviteBox");
 		},
 		function(){
 			//failed
-			alert("Ошибка!")
+			console.log("VK не АРБАЙТЕН!")
 		},'5.101');
 	</script>
 	<canvas id="canvasGame" width="1000" height="700"></canvas>
